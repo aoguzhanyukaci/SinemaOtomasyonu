@@ -82,16 +82,16 @@ namespace SinemaOtomasyonuMaster
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 17);
             this.label5.TabIndex = 4;
-            this.label5.Text = "+90 (507) 444 44 44";
+            this.label5.Text = "+90 (507) 314 94 40";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(93, 135);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(227, 17);
+            this.label6.Size = new System.Drawing.Size(212, 17);
             this.label6.TabIndex = 5;
-            this.label6.Text = "oguzhansinaboost@gmail.com";
+            this.label6.Text = "aoguzhanyukaci@gmail.com";
             // 
             // label7
             // 
