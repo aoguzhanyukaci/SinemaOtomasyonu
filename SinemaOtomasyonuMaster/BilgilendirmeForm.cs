@@ -165,7 +165,7 @@ namespace SinemaOtomasyonuMaster
             DateTime yeni = DateTime.Parse(dtpTarih.Value.ToString());
             string saat = yeni.ToString("t");
 
-            DateTime bugun = DateTime.Parse(DateTime.Now.ToShortDateString());
+            DateTime bugun = DateTime.Now;
 
             foreach (var item in db.Seanslar)
             {
@@ -176,6 +176,10 @@ namespace SinemaOtomasyonuMaster
                         if (item.SalonAdi == cboSalonSec.Text)
                         {
                             if (string.Compare(saat, item.SeansZamani, true) == -1)
+                            {
+                                cboSeansSec.Items.Add(item.SeansZamani);
+                            }
+                            else if (string.Compare(bugun.ToLongDateString(), item.Tarih, true) == -1)
                             {
                                 cboSeansSec.Items.Add(item.SeansZamani);
                             }
